@@ -1,0 +1,27 @@
+{
+  "name": "cssobj-plugin-post-csstext",
+  "version": "1.0.0",
+  "description": "https://github.com/cssobj/cssobj-plugin-post-csstext",
+  "main": "dist/cssobj-plugin-post-csstext.cjs.js",
+  "jsnext:main": "dist/cssobj-plugin-post-csstext.es.js",
+  "scripts": {
+    "test": "mocha",
+    "report": "cd dist && gzip < cssobj-plugin-post-csstext.min.js > cssobj-plugin-post-csstext.min.gz && ls -lh && rm -f *.gz",
+    "make": "rollup -c && uglifyjs dist/cssobj-plugin-post-csstext.iife.js -cm -o dist/cssobj-plugin-post-csstext.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cssobj/cssobj-plugin-post-csstext.git"
+  },
+  "keywords": [
+    "cssobj",
+    "cssobj plugin",
+    "css text"
+  ],
+  "author": "James Yang <jamesyang999@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cssobj/cssobj-plugin-post-csstext/issues"
+  },
+  "homepage": "https://github.com/cssobj/cssobj-plugin-post-csstext#readme"
+}
