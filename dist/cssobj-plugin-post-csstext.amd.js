@@ -26,6 +26,11 @@ define('cssobj_plugin_post_csstext', function () { 'use strict';
     }
   }
 
+  // helper function to add plugin
+  cssobj_plugin_post_csstext.addPlugin = function(result, callback) {
+    result.options.plugins.post.push(pluginCssText(callback))
+  }
+
   return cssobj_plugin_post_csstext;
 
 });

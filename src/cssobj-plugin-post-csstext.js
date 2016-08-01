@@ -23,3 +23,9 @@ export default function cssobj_plugin_post_csstext(callback) {
     return cb(str), result
   }
 }
+
+// helper function to add plugin
+cssobj_plugin_post_csstext.addPlugin = function(result, callback) {
+  result.options.plugins.post.push(pluginCssText(callback))
+}
+

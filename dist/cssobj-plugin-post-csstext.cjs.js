@@ -26,4 +26,9 @@ function cssobj_plugin_post_csstext(callback) {
   }
 }
 
+// helper function to add plugin
+cssobj_plugin_post_csstext.addPlugin = function(result, callback) {
+  result.options.plugins.post.push(pluginCssText(callback))
+}
+
 module.exports = cssobj_plugin_post_csstext;
