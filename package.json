@@ -1,13 +1,13 @@
 {
   "name": "cssobj-plugin-post-csstext",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "https://github.com/cssobj/cssobj-plugin-post-csstext",
   "main": "dist/cssobj-plugin-post-csstext.cjs.js",
   "jsnext:main": "dist/cssobj-plugin-post-csstext.es.js",
   "scripts": {
     "test": "mocha",
     "report": "cd dist && gzip < cssobj-plugin-post-csstext.min.js > cssobj-plugin-post-csstext.min.gz && ls -lh && rm -f *.gz",
-    "make": "rollup -c && uglifyjs dist/cssobj-plugin-post-csstext.iife.js -cm -o dist/cssobj-plugin-post-csstext.min.js"
+    "make": "rollup -c && uglifyjs dist/cssobj-plugin-post-csstext.iife.js -cm -o dist/cssobj-plugin-post-csstext.min.js && gulp bump"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,9 @@
   "bugs": {
     "url": "https://github.com/cssobj/cssobj-plugin-post-csstext/issues"
   },
-  "homepage": "https://github.com/cssobj/cssobj-plugin-post-csstext#readme"
+  "homepage": "https://github.com/cssobj/cssobj-plugin-post-csstext#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-bump": "^2.2.0"
+  }
 }
