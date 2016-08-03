@@ -1,5 +1,7 @@
 // cssobj plugin, use with plugin-cssom
 
+import {arrayKV} from '../../cssobj-helper/lib/cssobj-helper.js'
+
 export default function cssobj_plugin_post_csstext(callback) {
 
   var cb = function(str) {
@@ -26,6 +28,6 @@ export default function cssobj_plugin_post_csstext(callback) {
 
 // helper function to add plugin
 cssobj_plugin_post_csstext.addPlugin = function(result, callback) {
-  result.options.plugins.post.push(pluginCssText(callback))
+  arrayKV(result.options.plugins, 'post', cssobj_plugin_post_csstext(callback))
 }
 

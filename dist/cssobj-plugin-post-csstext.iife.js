@@ -1,7 +1,12 @@
 var cssobj_plugin_post_csstext = (function () {
   'use strict';
 
-  // cssobj plugin, use with plugin-cssom
+  // ensure obj[k] as array, then push v into it
+  function arrayKV (obj, k, v, reverse, unique) {
+    obj[k] = k in obj ? [].concat(obj[k]) : []
+    if(unique && obj[k].indexOf(v)>-1) return
+    reverse ? obj[k].unshift(v) : obj[k].push(v)
+  }
 
   function cssobj_plugin_post_csstext(callback) {
 
@@ -29,7 +34,7 @@ var cssobj_plugin_post_csstext = (function () {
 
   // helper function to add plugin
   cssobj_plugin_post_csstext.addPlugin = function(result, callback) {
-    result.options.plugins.post.push(pluginCssText(callback))
+    arrayKV(result.options.plugins, 'post', cssobj_plugin_post_csstext(callback))
   }
 
   return cssobj_plugin_post_csstext;
