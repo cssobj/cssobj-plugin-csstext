@@ -11,6 +11,7 @@ var cssobj_plugin_post_csstext = (function () {
   function cssobj_plugin_post_csstext(callback) {
 
     var cb = function(str) {
+      str = str.replace(/^\s*html\s*{\s*}/).replace(/^\s*body\s*{\s*}/)
       typeof callback=='function' && callback(str)
     }
 
