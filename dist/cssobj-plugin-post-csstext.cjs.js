@@ -10,7 +10,11 @@ function arrayKV (obj, k, v, reverse, unique) {
 function cssobj_plugin_post_csstext(callback) {
 
   var cb = function(str) {
-    str = str.replace(/^\s*html\s*{\s*}/).replace(/^\s*body\s*{\s*}/)
+    // replace empty html & body for IE
+    str = str
+      .replace(/^\s*html\s*{\s*}\s*/i, '')
+      .replace(/^\s*body\s*{\s*}\s*/i, '')
+
     typeof callback=='function' && callback(str)
   }
 

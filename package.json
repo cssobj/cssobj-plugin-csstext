@@ -1,6 +1,6 @@
 {
   "name": "cssobj-plugin-post-csstext",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "https://github.com/cssobj/cssobj-plugin-post-csstext",
   "main": "dist/cssobj-plugin-post-csstext.cjs.js",
   "jsnext:main": "dist/cssobj-plugin-post-csstext.es.js",
