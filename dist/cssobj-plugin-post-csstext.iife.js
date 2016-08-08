@@ -11,11 +11,6 @@ var cssobj_plugin_post_csstext = (function () {
   function cssobj_plugin_post_csstext(callback) {
 
     var cb = function(str) {
-      // replace empty html & body for IE
-      str = str
-        .replace(/^\s*html\s*{\s*}\s*/i, '')
-        .replace(/^\s*body\s*{\s*}\s*/i, '')
-
       typeof callback=='function' && callback(str)
     }
 
@@ -29,7 +24,7 @@ var cssobj_plugin_post_csstext = (function () {
 
       var str = ''
       var rules = sheet.cssRules || sheet.rules
-      for(var i = 1, len = rules.length; i < len; i++) {
+      for(var i = 0, len = rules.length; i < len; i++) {
         str += rules[i].cssText + '\n'
       }
 
