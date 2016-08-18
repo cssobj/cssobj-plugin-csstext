@@ -1,13 +1,13 @@
 // rollup.config.js
 
 export default {
-  entry: 'src/cssobj-plugin-post-csstext.js',
-  moduleName: 'cssobj_plugin_post_csstext',
-  moduleId: 'cssobj_plugin_post_csstext',
+  entry: 'src/cssobj-plugin-csstext.js',
+  moduleName: 'cssobj_plugin_csstext',
+  moduleId: 'cssobj_plugin_csstext',
   targets: [
-    { format: 'iife', dest: 'dist/cssobj-plugin-post-csstext.iife.js' },
-    { format: 'amd',  dest: 'dist/cssobj-plugin-post-csstext.amd.js'  },
-    { format: 'cjs',  dest: 'dist/cssobj-plugin-post-csstext.cjs.js'  },
-    { format: 'es',   dest: 'dist/cssobj-plugin-post-csstext.es.js'   }
+    { format: 'iife', dest: 'dist/cssobj-plugin-csstext.iife.js' },
+    { format: 'amd',  dest: 'dist/cssobj-plugin-csstext.amd.js'  },
+    { format: 'cjs',  dest: 'dist/cssobj-plugin-csstext.cjs.js'  },
+    { format: 'es',   dest: 'dist/cssobj-plugin-csstext.es.js'   }
   ]
 }

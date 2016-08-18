@@ -1,17 +1,17 @@
 {
-  "name": "cssobj-plugin-post-csstext",
-  "version": "1.0.7",
-  "description": "https://github.com/cssobj/cssobj-plugin-post-csstext",
-  "main": "dist/cssobj-plugin-post-csstext.cjs.js",
-  "jsnext:main": "dist/cssobj-plugin-post-csstext.es.js",
+  "name": "cssobj-plugin-csstext",
+  "version": "2.0.1",
+  "description": "https://github.com/cssobj/cssobj-plugin-csstext",
+  "main": "dist/cssobj-plugin-csstext.cjs.js",
+  "jsnext:main": "dist/cssobj-plugin-csstext.es.js",
   "scripts": {
     "test": "mocha",
-    "report": "cd dist && gzip < cssobj-plugin-post-csstext.min.js > cssobj-plugin-post-csstext.min.gz && ls -lh && rm -f *.gz",
-    "make": "rollup -c && uglifyjs dist/cssobj-plugin-post-csstext.iife.js -cm -o dist/cssobj-plugin-post-csstext.min.js && gulp bump"
+    "report": "cd dist && gzip < cssobj-plugin-csstext.min.js > cssobj-plugin-csstext.min.gz && ls -lh && rm -f *.gz",
+    "make": "rollup -c && uglifyjs dist/cssobj-plugin-csstext.iife.js -cm -o dist/cssobj-plugin-csstext.min.js && gulp bump"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cssobj/cssobj-plugin-post-csstext.git"
+    "url": "git+https://github.com/cssobj/cssobj-plugin-csstext.git"
   },
   "keywords": [
     "cssobj",
@@ -21,9 +21,9 @@
   "author": "James Yang <jamesyang999@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/cssobj/cssobj-plugin-post-csstext/issues"
+    "url": "https://github.com/cssobj/cssobj-plugin-csstext/issues"
   },
-  "homepage": "https://github.com/cssobj/cssobj-plugin-post-csstext#readme",
+  "homepage": "https://github.com/cssobj/cssobj-plugin-csstext#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-bump": "^2.2.0"

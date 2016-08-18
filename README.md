@@ -1,25 +1,25 @@
-# cssobj-plugin-post-csstext
+# cssobj-plugin-csstext
 
 Get cssText from CSSOM.
 
 ## Install
 
 ``` javascript
-npm install cssobj/cssobj-plugin-post-csstext
+npm install cssobj/cssobj-plugin-csstext
 ```
 
 ## Usage:
 
 ### Option 1: as a plugin
 
-It **must** load after [plugin-cssom](https://github.com/cssobj/cssobj-plugin-post-cssom).
+It **must** load after [plugin-cssom](https://github.com/cssobj/cssobj-plugin-cssom).
 
 ``` javascript
-var pluginCssText = require('cssobj-plugin-post-csstext')
+var pluginCssText = require('cssobj-plugin-csstext')
 
 var result = cssobj(obj)
 
-result.options.plugins.post.push(pluginCssText(callback))
+result.options.plugins.push({post: pluginCssText(callback)})
 
 function callback(css) {
   // for every time result.update

@@ -1,4 +1,4 @@
-var cssobj_plugin_post_csstext = (function () {
+var cssobj_plugin_csstext = (function () {
   'use strict';
 
   // ensure obj[k] as array, then push v into it
@@ -8,7 +8,7 @@ var cssobj_plugin_post_csstext = (function () {
     reverse ? obj[k].unshift(v) : obj[k].push(v)
   }
 
-  function cssobj_plugin_post_csstext(callback) {
+  function cssobj_plugin_csstext(callback) {
 
     var cb = function(str) {
       typeof callback=='function' && callback(str)
@@ -33,10 +33,10 @@ var cssobj_plugin_post_csstext = (function () {
   }
 
   // helper function to add plugin
-  cssobj_plugin_post_csstext.addPlugin = function(result, callback) {
-    arrayKV(result.options.plugins, 'post', cssobj_plugin_post_csstext(callback))
+  cssobj_plugin_csstext.addPlugin = function(result, callback) {
+    arrayKV(result.options, 'plugins', {post: cssobj_plugin_csstext(callback)})
   }
 
-  return cssobj_plugin_post_csstext;
+  return cssobj_plugin_csstext;
 
 }());
