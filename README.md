@@ -19,7 +19,7 @@ var pluginCssText = require('cssobj-plugin-csstext')
 
 var result = cssobj(obj)
 
-result.options.plugins.push({post: pluginCssText(callback)})
+result.options.plugins.push( pluginCssText(callback) )
 
 function callback(css) {
   // for every time result.update
@@ -30,6 +30,6 @@ function callback(css) {
 ### Option 2: as callback for onUpdate
 
 ``` javascript
-var result = cssobj(obj, {onUpdate: pluginCssText(callback)})
+var result = cssobj(obj, { onUpdate: pluginCssText(callback).post })
 ```
 

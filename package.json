@@ -1,6 +1,6 @@
 {
   "name": "cssobj-plugin-csstext",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "https://github.com/cssobj/cssobj-plugin-csstext",
   "main": "dist/cssobj-plugin-csstext.cjs.js",
   "jsnext:main": "dist/cssobj-plugin-csstext.es.js",
