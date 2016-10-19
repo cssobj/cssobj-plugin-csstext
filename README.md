@@ -1,6 +1,8 @@
 # cssobj-plugin-csstext
 
-Get cssText from CSSOM.
+[![Join the chat at https://gitter.im/css-in-js/cssobj](https://badges.gitter.im/css-in-js/cssobj.svg)](https://gitter.im/css-in-js/cssobj)
+
+Get cssText from CSSOM, for debug purpose.
 
 ## Install
 
