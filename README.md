@@ -6,8 +6,27 @@ Get cssText from CSSOM, for debug purpose.
 
 ## Install
 
+- **npm**
+
 ``` javascript
 npm install cssobj/cssobj-plugin-csstext
+```
+
+- **Use in DevTools**
+
+paste below code into console:
+
+``` javascript
+function showcss(e){"string"==typeof e&&(e=document.getElementById(e)),e||(e=$0);var s=e.sheet||e.styleSheet;if(s.cssText)return s.cssText;for(var t="",n=s.cssRules||s.rules,r=0,c=n.length;r<c;r++)t+=n[r].cssText+"\n";return t}
+```
+
+Then can show css for any `<style>` tag:
+
+``` javascript
+showcss()  // show last selected style
+showcss($0)  // show last selected style
+
+showcss('styleTagId')  // using ID of style tag
 ```
 
 ## Usage:
