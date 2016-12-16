@@ -2,7 +2,9 @@
 
 [![Join the chat at https://gitter.im/css-in-js/cssobj](https://badges.gitter.im/css-in-js/cssobj.svg)](https://gitter.im/css-in-js/cssobj)
 
-Get cssText from CSSOM, for debug purpose. Another option is [cssobj-helper-showcss](https://github.com/cssobj/cssobj-helper-showcss)
+DEPRECATED! Use this: [cssobj-helper-showcss](https://github.com/cssobj/cssobj-helper-showcss)
+
+Get cssText from cssobj and CSSOM, for debug purpose.
 
 ## Install
 
